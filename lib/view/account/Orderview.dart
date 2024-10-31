@@ -210,7 +210,9 @@ class _OrderviewState extends State<Orderview> {
                                         .Orderdetails.value?.product![index];
                                     return orderRow(
                                       item: pobj,
+                                      showreviewbutton:orderdetailService.Orderdetails.value!.orderStatus == "delivered",
                                       ontap: () {
+
                                         Navigator.push(
                                             context,
                                             PopoutLayout(

@@ -10,7 +10,8 @@ import 'package:nectar/models/Orderproducts.dart';
 class orderRow extends StatelessWidget {
   final OrderProduct? item;
   final VoidCallback ontap;
-  const orderRow({super.key, this.item, required this.ontap});
+  final  bool showreviewbutton;
+  const orderRow({super.key, this.item, required this.ontap,  this.showreviewbutton = false});
 
   @override
   Widget build(BuildContext context) {
@@ -119,10 +120,13 @@ class orderRow extends StatelessWidget {
                 )
               ],
             ),
-            Padding(
-                padding:EdgeInsets.only(top:8),
-                child:RoundButton(Title: "Write a Review", onpresed:ontap, )
-            )
+            if(showreviewbutton)
+              Padding(
+                  padding:EdgeInsets.only(top:8),
+                  child:RoundButton(Title: "Write a Review", onpresed:ontap, )
+              )
+
+
           ],
         ),
 

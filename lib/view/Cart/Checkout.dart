@@ -363,16 +363,19 @@ class _CheckoutState extends State<Checkout> {
                   ),
                 ),
          
-                Obx(() {
-                  return RoundButton(Title: cartservive.isloading.value == true
-                      ? "Processing..."
-                      : "Place Order",
-                    onpresed: () {
-                      createorder();
-                    },
-                    bgcolor: cartservive.isloading.value == true ? Tcolor
-                        .disablecolor : Tcolor.primary,height:60,);
-                }),
+                Padding(
+                  padding:  EdgeInsets.only(bottom:MediaQuery.of(context).padding.bottom),
+                  child: Obx(() {
+                    return RoundButton(Title: cartservive.isloading.value == true
+                        ? "Processing..."
+                        : "Place Order",
+                      onpresed: () {
+                        createorder();
+                      },
+                      bgcolor: cartservive.isloading.value == true ? Tcolor
+                          .disablecolor : Tcolor.primary,height:60,);
+                  }),
+                ),
                 SizedBox(height: 15,),
          
               ],
