@@ -168,7 +168,7 @@ class CartService extends GetxController {
         "price": price,
         "userId": userId
       });
-      String url = "https://dear-civet-subtly.ngrok-free.app/api/user/cartItems";
+      String url = "https://nectar-backend.onrender.com/api/user/cartItems";
       final res = await http.patch(
           Uri.parse(url), headers: {"Content-Type": "application/json"},
           body: body);
