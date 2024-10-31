@@ -1,16 +1,25 @@
-# nectar
+Flutter Grocery App
+A Flutter-based grocery shopping app with an Express.js backend. This app provides a seamless shopping experience, including product listings, cart management, and order tracking.
 
-A new Flutter project.
+Features
+Product Browsing: View and search through available grocery items.
+Add to Cart: Add products to the shopping cart.
+Order Checkout: Complete the order process.
+User Authentication: Sign up, login, and manage user sessions.
+Order History: View past orders and their status.
 
-## Getting Started
+Technologies Used
+Frontend (Flutter)
+Flutter SDK: For building the cross-platform mobile application.
+Dart: Programming language for Flutter.
+Provider or Riverpod: For state management (adjust according to the package used).
+HTTP: For REST API integration.
+Razorpay: For Payment Integration
 
-This project is a starting point for a Flutter application.
+Backend (Express.js)
+Express.js: Web framework for Node.js.
+PostgreSQL: Database for storing user and product data.
+Prisma:  ODM for schema modeling.
+JWT: For secure user authentication.
+bcrypt: For password hashing.    
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
