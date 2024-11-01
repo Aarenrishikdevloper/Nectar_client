@@ -6,7 +6,8 @@ A Flutter-based grocery shopping app with an Express.js backend. This app provid
 * Add to Cart: Add products to the shopping cart.
 * Order Checkout: Complete the order process.
 * User Authentication: Sign up, login, and manage user sessions.
-* Order History: View past orders and their status.
+* Order History: View past orders and their status. 
+* Add Products to wishlist
 
 # Technologies Used
 * Frontend (Flutter)
